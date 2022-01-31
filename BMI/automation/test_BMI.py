@@ -1,6 +1,8 @@
 import unittest
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import sys
-sys.path.insert(1, '../code')
+sys.path.insert(1,BASE_DIR + '/code')
 import BMI
 from pathlib import Path
 import pandas as pd
