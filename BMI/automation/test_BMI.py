@@ -1,6 +1,6 @@
 import unittest
 import sys
-sys.path.insert(0, '../code')
+sys.path.insert(1, '../code')
 import BMI
 from pathlib import Path
 import pandas as pd
