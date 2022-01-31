@@ -6,8 +6,8 @@ import pandas as pd
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-filename = Path(BASE_DIR + '\data\data.json')
-lookupfilename = Path(BASE_DIR + '\data\lookup.json')
+filename = Path(BASE_DIR + '/data/data.json')
+lookupfilename = Path(BASE_DIR + '/data/lookup.json')
 
 def file_name_exists():
     # file exists function, return 1 if dound else 0
