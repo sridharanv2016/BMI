@@ -9,8 +9,8 @@ import pandas as pd
 
 
 class TestBMI(unittest.TestCase):
-    filename = Path("../data/data.json")
-    lookupfilename = Path("../data/lookup.json")
+    filename = BASE_DIR + '/data.json'
+    lookupfilename = BASE_DIR + '/data/lookup.json'
 
     def test_fileexists(self):
         result = BMI.file_name_exists()
