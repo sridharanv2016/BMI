@@ -97,7 +97,7 @@ def read_json_into_df():
         return 'ERROR- An exception occured'
 
 dfresult=read_json_into_df()
-overweightcountAllGender = dfresult[(dfresult['BMICategory'] == 'Overweight')]['Gender'].count()
+overweightcountAllGender = dfresult[(dfresult['BMICategory'] == 'Overweight')].count()
 print('Total Overweight people: ' + str(overweightcountAllGender))
 print ('-------------------------------------')
 print ('Information by Gender, BMI Category')
