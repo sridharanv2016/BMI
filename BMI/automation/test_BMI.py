@@ -2,15 +2,15 @@ import unittest
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 import sys
-sys.path.insert(1,BASE_DIR + '\code')
+sys.path.insert(1,BASE_DIR + '/code')
 import BMI
 from pathlib import Path
 import pandas as pd
 
 
 class TestBMI(unittest.TestCase):
-    filename = Path(BASE_DIR + '\data\data.json')
-    lookupfilename = Path(BASE_DIR + '\data\lookup.json')
+    filename = Path(BASE_DIR + '/data/data.json')
+    lookupfilename = Path(BASE_DIR + '/data/lookup.json')
 
     def test_fileexists(self):
         result = BMI.file_name_exists()
